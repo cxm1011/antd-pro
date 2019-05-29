@@ -2,6 +2,11 @@
   "name": "antd-demo",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --devtool source-map --open  --hot --config webpack.dev.js",
+    "build": "webpack --config webpack.dll.config.js && webpack --config webpack.prod.js",
+    "dll": "NODE_ENV=production webpack --config webpack.dll.config.js "
+  },
   "dependencies": {
     "antd": "^3.18.2",
     "axios": "^0.18.0",
@@ -62,11 +67,6 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.1"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --devtool source-map --open  --hot --config webpack.dev.js",
-    "build": "webpack --config webpack.dll.config.js && webpack --config webpack.prod.js",
-    "dll": "NODE_ENV=production webpack --config webpack.dll.config.js "
   },
   "eslintConfig": {
     "extends": "react-app"
