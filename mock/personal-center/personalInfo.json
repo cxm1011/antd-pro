@@ -1,0 +1,11 @@
+{
+    "resultCode": "000000",
+    "resultMesg": "成功",
+    "data": {
+      "name": "嘟嘟",
+      "days": 128, 
+      "loanNumber": 12345,
+      "sort": 12,
+      "sortTotal":162
+    }
+}
